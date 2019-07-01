@@ -1,0 +1,12 @@
+/* 设置鼠标样式 */
+#tracksList .col-2 .fa:hover{
+    cursor: pointer;
+}
+
+.firstBox{
+    margin-bottom: 20%;
+}
+.secondBox{
+    background-color: #fff;
+    height: 20%;
+}

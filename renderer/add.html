@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>添加歌曲</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>添加音乐到曲库</h1>
+        <div id="musicList" class="mb-2">你还未选择任何音乐文件</div>
+        <button id="select-music" type="button" class="btn btn-outline-primary btn-lg btn-block mt-4 mb-2">
+            选择歌曲
+        </button>
+        <button id="add-music" type="button" class="btn btn-primary btn-lg btn-block mt-4 mb-2">
+            导入歌曲
+        </button>
+    </div>
+
+    <script>
+        //因为electron框架的原因 这里可以直接用node的api
+        require('./add.js');
+    </script>
+</body>
+</html>

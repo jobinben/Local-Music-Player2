@@ -1,0 +1,51 @@
+{
+  "name": "MusicPlayer-BigIce",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "build"
+  },
+  "build": {
+    "appId": "BigIce",
+    "win": {
+      "target": [
+        {
+          "target": "nsis-web",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ],
+      "icon": "build/icon.ico",
+      "artifactName": "jobin",
+      "publisherName": "jobin, Inc."
+    },
+    "nsis": {
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false,
+      "perMachine": false
+    }
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "BigIce",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "bootstrap": "^4.3.1",
+    "electron": "^5.0.4",
+    "electron-builder": "^20.44.4",
+    "electron-store": "^3.3.0",
+    "nodemon": "^1.19.1",
+    "open-iconic": "git+https://github.com/iconic/open-iconic.git",
+    "uuid": "^3.3.2"
+  }
+}
